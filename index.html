@@ -1,6 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KQ Learning Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">KQ Learning</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="ks1.html">KS1</a>
+      <a href="ks2.html">KS2</a>
+      <a href="entrance-exams.html">Entrance Exams</a>
+      <a href="ks3.html">KS3</a>
+      <a href="gcse.html">GCSE</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">KAIQ-powered learning</p>
+        <h1>Boost every key stage with guided practice and curated resources.</h1>
+        <p class="lead">Lesson-ready material, practice pathways, and smart revision tools for students, parents, and tutors.</p>
+        <div class="hero__actions">
+          <a class="button" href="ks1.html">Explore key stages</a>
+          <a class="button button--ghost" href="#resources">See resources</a>
+        </div>
+      </div>
+      <div class="hero__panel">
+        <div class="stat">
+          <span class="stat__number">500+</span>
+          <span class="stat__label">Activities curated with KAIQ</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">8-16</span>
+          <span class="stat__label">Target age range</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">Daily</span>
+          <span class="stat__label">New tips and prompts</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pillars" id="resources">
+      <div class="section-header">
+        <p class="eyebrow">What you'll find</p>
+        <h2>Landing pages for every path.</h2>
+        <p class="lead">Each area surfaces tailored KAIQ study plans, printable resources, and quick-win activities designed for confidence and progress.</p>
+      </div>
+      <div class="grid">
+        <a class="card" href="ks1.html">
+          <div class="card__title">KS1</div>
+          <p class="card__body">Curiosity-first literacy and numeracy with playful tasks and visual anchors.</p>
+          <span class="card__cta">Open KS1</span>
+        </a>
+        <a class="card" href="ks2.html">
+          <div class="card__title">KS2</div>
+          <p class="card__body">Structured skills ladders, times-table sprints, and reading comprehension guides.</p>
+          <span class="card__cta">Open KS2</span>
+        </a>
+        <a class="card" href="entrance-exams.html">
+          <div class="card__title">Entrance Exams</div>
+          <p class="card__body">Verbal, non-verbal, and reasoning drills with pacing tips and practice packs.</p>
+          <span class="card__cta">Open Entrance Exams</span>
+        </a>
+        <a class="card" href="ks3.html">
+          <div class="card__title">KS3</div>
+          <p class="card__body">Topic refreshers, experiment prompts, and assignment-friendly notes.</p>
+          <span class="card__cta">Open KS3</span>
+        </a>
+        <a class="card" href="gcse.html">
+          <div class="card__title">GCSE</div>
+          <p class="card__body">Exam-board aware checklists, revision timetables, and quick-marking quizzes.</p>
+          <span class="card__cta">Open GCSE</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__content">
+        <h3>Publish faster with KAIQ</h3>
+        <p>Draft blog posts, schedule resource drops, and push updates directly to Netlify and Supabase content feeds.</p>
+      </div>
+      <a class="button button--light" href="#contact">Plan your rollout</a>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <p class="eyebrow">Get started</p>
+        <h2>Connect with KQ</h2>
+        <p class="lead">Tell us what your learners need and we will tailor KAIQ-powered journeys for every stage.</p>
+      </div>
+      <form class="contact__form">
+        <div class="form__row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="form__row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form__row">
+          <label for="stage">Focus area</label>
+          <select id="stage" name="stage">
+            <option>KS1</option>
+            <option>KS2</option>
+            <option>Entrance Exams</option>
+            <option>KS3</option>
+            <option>GCSE</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label for="message">What should we prioritise?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Assessment prep, skill gaps, lesson packs..."></textarea>
+        </div>
+        <button class="button" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <div class="brand">KQ</div>
+      <p>Learning resources and updates delivered with KAIQ.</p>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>
+      <a href="https://supabase.com/" target="_blank" rel="noreferrer">Supabase</a>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KQ Learning Hub</title>
